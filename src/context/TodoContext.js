@@ -1,6 +1,6 @@
 import {createContext, useContext} from 'react'
 
-const TodoContext = createContext({
+export const TodoContext = createContext({
     todos: [
         {
             id: 1,
@@ -14,7 +14,6 @@ const TodoContext = createContext({
     toggleComplete: (id) => {} 
 })
 
-export default TodoContext;
 
 export const useTodo = () => {
     return useContext(TodoContext)
